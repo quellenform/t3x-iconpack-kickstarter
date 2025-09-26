@@ -1,0 +1,29 @@
+{
+	"name": "quellenform/t3x-iconpack-kickstarter",
+	"type": "typo3-cms-extension",
+	"description": "",
+	"keywords": [
+		"TYPO3",
+		"extension",
+		"icons"
+	],
+	"license": [
+		"GPL-3.0-or-later"
+	],
+	"require": {
+		"php": ">=7.4.0",
+		"typo3/cms-core": ">=10.4 || ^13.4 || 14.*.*@dev",
+		"quellenform/t3x-iconpack": ">=1.3.0 ^1.0"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://composer.typo3.org/"
+		}
+	],
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "iconpack_kickstarter"
+		}
+	}
+}

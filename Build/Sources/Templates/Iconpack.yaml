@@ -1,0 +1,37 @@
+iconpack:
+  # This title appears in the dropdown menu in the backend:
+  title: "@@family"
+  # The key of the iconpack ...choose this value wisely!
+  key: "@@key"
+  version: "@@version"
+
+  renderTypes:
+    _default:
+      # CSS prefix for all icons:
+      prefix: "@@key-"
+      # Attributes to be used by default:
+      attributes:
+        class: "@@key"
+
+    webfont:
+      # CSS file that is used for web fonts:
+      css: "EXT:@@ext/Resources/Public/Iconpack/css/@@file.min.css"
+
+    svg:
+      # Source folder of the SVG files, which are rendered as <img> tag:
+      source: "EXT:@@ext/Resources/Public/Iconpack/svgs/"
+
+    svgSprite:
+      # Source file which contains all the icons as SVG sprite:
+      source: "EXT:@@ext/Resources/Public/Iconpack/sprites/@@file.svg"
+      attributes:
+        fill: "currentColor"
+
+    svgInline:
+      # Source folder of the SVG files that are rendered as <svg> tag (inline SVG):
+      source: "EXT:@@ext/Resources/Public/Iconpack/svgs/"
+      attributes:
+        fill: "currentColor"
+
+  # File containing a set of icons provided by this iconpack:
+  icons: "EXT:@@ext/Resources/Public/Iconpack/metadata/icons.yml"

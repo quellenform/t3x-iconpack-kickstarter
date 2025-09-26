@@ -1,0 +1,32 @@
+@use "@@key";
+@use "icons";
+
+// Variables
+// --------------------------
+$iconpack-css-prefix: @@key !default;
+
+// Core CSS
+// -------------------------
+.#{$iconpack-css-prefix} {
+	font-family: "@@family";
+	font-weight: 400;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	display: inline-block;
+	font-style: normal;
+	font-variant: normal;
+	line-height: 1;
+	text-rendering: auto;
+}
+
+.#{$iconpack-css-prefix}::before {
+	content: var(--#{$iconpack-css-prefix});
+}
+
+// Icons
+// -------------------------
+@each $name, $icon in icons.$icons {
+	.#{$iconpack-css-prefix}-#{$name} {
+		--@@key: "#{$icon}";
+	}
+}
