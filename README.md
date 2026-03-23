@@ -10,9 +10,9 @@ Kickstarter extension for [EXT:iconpack](https://github.com/quellenform/t3x-icon
 4. Edit the file *Build/package.json* and fill in the following data according to your preferences:
    ```json
    "iconpack": {
-     "family":  "My First Iconpack",       // Name of the conpack & font name (also used in BE dropdowns)
+     "family":  "My First Iconpack",       // Name of the iconpack & font name (also used in BE dropdowns)
      "file":    "myfirsticonpack",         // Base name of the generated files
-     "key":     "mfi",                     // Unique conpack key (!)
+     "key":     "mfi",                     // Unique iconpack key (!)
      "version": "0.0.1",                   // Version of your iconpack
      "ext":     "iconpack_myfirsticonpack" // Extension name for TYPO3 (should start with "iconpack_*")
    }
